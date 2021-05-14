@@ -5,12 +5,12 @@ from django.contrib.auth.models import User
 from django import forms
 from .models import Product,Category
 
-choices = Category.objects.all().values_list('name','name')
+#choices = Category.objects.all().values_list('name','name')
 
-choice_list = []
-
-for item in choices:
-    choice_list.append(item)
+choice_list = [('Mattress', 'Mattress'),('Cycle', 'Cycle'),('Engineering Visualization KIt', 'Engineering Visualization KIt'),]
+#choice_list = []
+#for item in choices:
+#    choice_list.append(item)
 
 class CreateUserForm(UserCreationForm):
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',
