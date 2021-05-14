@@ -1,1 +1,1 @@
-web: gunicorn resale.wsgi
+web: gunicorn SE.wsgi
