@@ -1,0 +1,9 @@
+<h1>Hello World</h1>
+
+<ul>
+    {% for product in object_list %}
+        <li><a href="{% url 'product-details' product.pk %}">{{product.title}}</a> - {{product.name}} <br/>
+        {{product.body}}</li>
+        <img src = "{{product.product_image.url}}">
+    {% endfor %}
+</ul>

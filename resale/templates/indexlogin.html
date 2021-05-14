@@ -1,0 +1,513 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+<title>Resale_v2 a Classified ads Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"><!-- bootstrap-CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap-select.css' %}"><!-- bootstrap-select-CSS -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" /><!-- style.css -->
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" /><!-- flexslider-CSS -->
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" /><!-- fontawesome-CSS -->
+<link rel="stylesheet" href="{% static 'css/menu_sideslide.css' %}" type="text/css" media="all"><!-- Navigation-CSS -->
+<!-- meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //meta tags -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+</head>
+<body>
+		<!-- Navigation -->
+
+		</div>
+		<!-- //Navigation -->
+	<!-- header -->
+	<header>
+
+
+
+		<div class="container">
+			<div class="agile-its-header">
+				<div class="logo">
+					<h1><a href="{% url 'index'%}"><span>Re</span>sale-v2</a></h1>
+				</div>
+
+
+				<div>
+				<a class="post-w3layouts-ad" >Hello {{ request.user }}</a>
+				<a class="post-w3layouts-ad" href="/logout">Logout</a>
+				<a class="post-w3layouts-ad" href="/postad">Post Free Ad</a>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<!-- Slider -->
+		<div class="slider">
+			<ul class="rslides" id="slider">
+				<li>
+					<div class="w3ls-slide-text">
+						<h3>Sell or Advertise anything online</h3>
+						<a  class="w3layouts-explore-all">Browse all Categories</a>
+					</div>
+				</li>
+				<li>
+					<div class="w3ls-slide-text">
+						<h3>Find the Best Deals Here</h3>
+						<a  class="w3layouts-explore">Explore</a>
+					</div>
+				</li>
+				<li>
+					<div class="w3ls-slide-text">
+						<h3>Lets build the home of your dreams</h3>
+						<a class="w3layouts-explore">Explore</a>
+					</div>
+				</li>
+				<li>
+					<div class="w3ls-slide-text">
+						<h3>Find your dream ride</h3>
+						<a  class="w3layouts-explore">Explore</a>
+					</div>
+				</li>
+				<li>
+					<div class="w3ls-slide-text">
+						<h3>The Easiest Way to get a Job</h3>
+						<a  class="w3layouts-explore">Find a Job</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //Slider -->
+		<!-- content-starts-here -->
+		<div class="main-content">
+			<div class="w3-categories">
+				<h3>Browse Categories</h3>
+				<div class="container">
+					<div class="col-md-3">
+						<div class="focus-grid w3layouts-boder1">
+							<a class="btn-8" href="/category/Mattress">
+								<div class="focus-border">
+									<div class="focus-layout">
+										<div class="focus-image"><i class="fa fa-mobile"></i></div>
+										<h4 class="clrchg">Mattresses</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="focus-grid w3layouts-boder2">
+						<a class="btn-8" href="/category/Cycle">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-laptop"></i></div>
+									<h4 class="clrchg">Cycles</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+															<div class="col-md-3">
+						<div class="focus-grid w3layouts-boder2">
+						<a class="btn-8" href="/category/Engineering Visualization KIt">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-pencil"></i></div>
+									<h4 class="clrchg"> Engineering Visualisation Kits </h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<!--<div class="col-md-3">
+					<div class="focus-grid w3layouts-boder3">
+						<a class="btn-8" href="categories.html#parentVerticalTab3">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-car"></i></div>
+									<h4 class="clrchg">Cars</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class="col-md-3">
+					<div class="focus-grid w3layouts-boder4">
+						<a class="btn-8" href="categories.html#parentVerticalTab4">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-motorcycle"></i></div>
+									<h4 class="clrchg">Bikes</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class="col-md-3">
+					<div class="focus-grid w3layouts-boder5">
+						<a class="btn-8" href="categories.html#parentVerticalTab5">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-wheelchair"></i></div>
+									<h4 class="clrchg">Furnitures</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class="col-md-3">
+					<div class="focus-grid w3layouts-boder6">
+						<a class="btn-8" href="categories.html#parentVerticalTab6">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-paw"></i></div>
+									<h4 class="clrchg">Pets</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class="col-md-3">
+					<div class="focus-grid w3layouts-boder7">
+						<a class="btn-8" href="categories.html#parentVerticalTab7">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-book"></i></div>
+									<h4 class="clrchg">Books, Sports & Hobbies</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class="col-md-3">
+					<div class="focus-grid w3layouts-boder8">
+						<a class="btn-8" href="categories.html#parentVerticalTab8">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-asterisk"></i></div>
+									<h4 class="clrchg">Fashion</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class="col-md-3">
+					<div class="focus-grid w3layouts-boder9">
+						<a class="btn-8" href="categories.html#parentVerticalTab9">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-gamepad"></i></div>
+									<h4 class="clrchg">Kids</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class="col-md-3">
+					<div class="focus-grid w3layouts-boder10">
+						<a class="btn-8" href="categories.html#parentVerticalTab10">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-shield"></i></div>
+									<h4 class="clrchg">Services</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class="col-md-3">
+					<div class="focus-grid w3layouts-boder11">
+						<a class="btn-8" href="categories.html#parentVerticalTab11">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-at"></i></div>
+									<h4 class="clrchg">Jobs</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class="col-md-3">
+					<div class="focus-grid w3layouts-boder12">
+						<a class="btn-8" href="categories.html#parentVerticalTab12">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-home"></i></div>
+									<h4 class="clrchg">Real Estate</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>-->
+			</div>
+			<!-- most-popular-ads -->
+
+
+			<!-- most-popular-ads -->
+			<div class="trending-ads">
+				<div class="container">
+				<!-- slider -->
+				<div class="agile-trend-ads">
+					<h2>Trending Ads</h2>
+							<ul id="flexiselDemo3">
+								<li>
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'product-details' products.0.id%}">
+
+											<img src="{{products.0.product_image.url}}" />
+											<span class="price">Rs:{{products.0.price}}</span>
+										</a>
+										<div class="w3-ad-info">
+											<h5>{{products.0.title}}</h5>
+											<span>1 hour ago</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'product-details' products.1.id%}">
+											<img src={{products.1.product_image.url}}" />
+											<span class="price">Rs:{{products.1.price}}</span>
+										</a>
+										<div class="w3-ad-info">
+											<h5>{{products.1.title}}</h5>
+											<span>3 hour ago</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'product-details' products.2.id%}">
+											<img src="{{products.2.product_image.url}}"  />
+											<span class="price">Rs:{{products.2.price}}</span>
+										</a>
+										<div class="w3-ad-info">
+											<h5>{{products.2.title}}</h5>
+											<span>8 hour ago</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'product-details' products.3.id%}">
+											<img src="{{products.3.product_image.url}}"/>
+											<span class="price">Rs:{{products.3.price}}</span>
+										</a>
+										<div class="w3-ad-info">
+											<h5>{{products.3.title}}</h5>
+											<span>19 hour ago</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'product-details' products.4.id%}">
+											<img src="{{products.4.product_image.url}}"/>
+											<span class="price">Rs:{{products.4.price}}</span>
+										</a>
+										<div class="w3-ad-info">
+											<h5>{{products.4.title}}</h5>
+											<span>1 hour ago</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'product-details' products.5.id%}">
+											<img src="{{products.5.product_image.url}}"/>
+											<span class="price">Rs:{{products.5.price}}</span>
+										</a>
+										<div class="w3-ad-info">
+											<h5>{{products.5.title}}</h5>
+											<span>1 day ago</span>
+										</div>
+									</div>
+
+						</ul>
+					</div>
+			</div>
+			<!-- //slider -->
+			</div>
+			<!-- //slider -->
+			</div>
+			<!--partners-->
+		<footer>
+			<div class="w3-agileits-footer-top">
+				<div class="container">
+					<div class="wthree-foo-grids">
+						<div class="col-md-6 wthree-footer-grid">
+							<h4 class="footer-head">Who We Are</h4>
+							<p>We are two students who made this website as part of our Software Engineering course project.
+								This website aims to provide a simple to use platform for incoming students to buy second hand items and graduating students to sell their items.</p>
+						</div>
+
+						<div class="col-md-5 wthree-footer-grid">
+							<h4 class="footer-head">Contact Us</h4>
+
+							<address>
+
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-earphone"></span></li>
+									<li>+919876981111 / +919876591723</li>
+								</ul>
+								<div class="clearfix"> </div>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-envelope"></span></li>
+									<li><a href="mailto:info@example.com">helpdesk21@gmail.com</a></li>
+								</ul>
+							</address>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="agileits-footer-bottom text-center">
+			<div class="container">
+				<div class="w3-footer-logo">
+					<h1><a href="index.html"><span>Re</span>sale-v2</a></h1>
+				</div>
+
+				<div class="copyrights">
+					<p> © 2016 Resale. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		</footer>
+        <!--footer section end-->
+		<!-- Navigation-Js-->
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/classie.js' %}"></script>
+		<!-- //Navigation-Js-->
+		<!-- js -->
+		<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+		<!-- js -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="{% static 'js/bootstrap.js' %}"></script>
+		<script src="{% static 'js/bootstrap-select.js' %}"></script>
+		<script>
+		  $(document).ready(function () {
+			var mySelect = $('#first-disabled2');
+
+			$('#special').on('click', function () {
+			  mySelect.find('option:selected').prop('disabled', true);
+			  mySelect.selectpicker('refresh');
+			});
+
+			$('#special2').on('click', function () {
+			  mySelect.find('option:disabled').prop('disabled', false);
+			  mySelect.selectpicker('refresh');
+			});
+
+			$('#basic2').selectpicker({
+			  liveSearch: true,
+			  maxOptions: 1
+			});
+		  });
+		</script>
+		<!-- language-select -->
+		<script type="text/javascript" src="{% static 'js/jquery.leanModal.min.js' %}"></script>
+		<link href="{% static 'css/jquery.uls.css' %}" rel="stylesheet"/>
+		<link href="{% static 'css/jquery.uls.grid.css' %}" rel="stylesheet"/>
+		<link href="{% static 'css/jquery.uls.lcd.css' %}" rel="stylesheet"/>
+		<!-- Source -->
+		<script src="{% static 'js/jquery.uls.data.js' %}"></script>
+		<script src="{% static 'js/jquery.uls.data.utils.js' %}"></script>
+		<script src="{% static 'js/jquery.uls.lcd.js' %}"></script>
+		<script src="{% static 'js/jquery.uls.languagefilter.js' %}"></script>
+		<script src="{% static 'js/jquery.uls.regionfilter.js' %}"></script>
+		<script src="{% static 'js/jquery.uls.core.js' %}"></script>
+		<script>
+					$( document ).ready( function() {
+						$( '.uls-trigger' ).uls( {
+							onSelect : function( language ) {
+								var languageName = $.uls.data.getAutonym( language );
+								$( '.uls-trigger' ).text( languageName );
+							},
+							quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+						} );
+					} );
+				</script>
+		<!-- //language-select -->
+		<script type="text/javascript" src="{% static 'js/jquery.flexisel.js' %}"></script><!-- flexisel-js -->
+					<script type="text/javascript">
+						 $(window).load(function() {
+							$("#flexiselDemo3").flexisel({
+								visibleItems:1,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 5000,
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: {
+									portrait: {
+										changePoint:480,
+										visibleItems:1
+									},
+									landscape: {
+										changePoint:640,
+										visibleItems:1
+									},
+									tablet: {
+										changePoint:768,
+										visibleItems:1
+									}
+								}
+							});
+
+						});
+					   </script>
+		<!-- Slider-JavaScript -->
+			<script src="{%static 'js/responsiveslides.min.js' %}"></script>
+			 <script>
+			$(function () {
+			  $("#slider").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				maxwidth: 800,
+				namespace: "large-btns"
+			  });
+
+			});
+		  </script>
+		<!-- //Slider-JavaScript -->
+		<!-- here stars scrolling icon -->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear'
+						};
+					*/
+
+					$().UItoTop({ easingType: 'easeOutQuart' });
+
+					});
+			</script>
+			<!-- start-smoth-scrolling -->
+			<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+			</script>
+			<!-- start-smoth-scrolling -->
+		<!-- //here ends scrolling icon -->
+</body>
+</html>

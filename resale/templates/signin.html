@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Resale_v2 a Classified ads Category Flat Bootstrap Responsive Website Template | Sign in :: w3layouts</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"><!-- bootstrap-CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap-select.css' %}"><!-- bootstrap-select-CSS -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" /><!-- style.css -->
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" /><!-- fontawesome-CSS -->
+<link rel="stylesheet" href="{% static 'css/menu_sideslide.css' %}" type="text/css" media="all"><!-- Navigation-CSS -->
+<!-- meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //meta tags -->
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Resale_v2 a Classified ads Category Flat Bootstrap Responsive Website Template | Sign up :: w3layouts</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"><!-- bootstrap-CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap-select.css' %}"><!-- bootstrap-select-CSS -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" /><!-- style.css -->
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" /><!-- fontawesome-CSS -->
+<link rel="stylesheet" href="{% static 'css/menu_sideslide.css' %}" type="text/css" media="all"><!-- Navigation-CSS -->
+<!-- meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //meta tags -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<!-- js -->
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/bootstrap-select.js' %}"></script>
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<!-- language-select -->
+<script type="text/javascript" src="{% static 'js/jquery.leanModal.min.js' %}"></script>
+<link href="{% static 'css/jquery.uls.css' %}" rel="stylesheet"/>
+<link href="{% static 'css/jquery.uls.grid.css' %}" rel="stylesheet"/>
+<link href="{% static 'css/jquery.uls.lcd.css' %}" rel="stylesheet"/>
+<!-- Source -->
+<script src="{% static 'js/jquery.uls.data.js' %}"></script>
+<script src="{% static 'js/jquery.uls.data.utils.js' %}"></script>
+<script src="{% static 'js/jquery.uls.lcd.js' %}"></script>
+<script src="{% static 'js/jquery.uls.languagefilter.js' %}"></script>
+<script src="{% static 'js/jquery.uls.regionfilter.js' %}"></script>
+<script src="{% static 'js/jquery.uls.core.js' %}"></script>
+<script>
+			$( document ).ready( function() {
+				$( '.uls-trigger' ).uls( {
+					onSelect : function( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						$( '.uls-trigger' ).text( languageName );
+					},
+					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+				} );
+			} );
+		</script>
+<!-- //language-select -->
+</head>
+<body>
+		<!-- //Navigation -->
+	<!-- header -->
+	<header>
+
+	<!-- Large modal -->
+
+		<div class="container">
+			<div class="agile-its-header">
+				<div class="logo">
+
+					<h1><a href="{% url 'index' %}"><span>Re</span>sale-v2</a></h1>
+				</div>
+				<div class="agileits_search">
+					<a href="{% url 'index' %}" class="post-w3layouts-ad"><i class="fa fa-home"></i> <b>Home</b></a>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<!-- sign in form -->
+	 <section>
+		<div id="agileits-sign-in-page" class="sign-in-wrapper">
+			<div class="agileinfo_signin">
+			<h3>Sign In</h3>
+<form method="POST" action="">
+						{% csrf_token %}
+
+							<input type="text" name="username" placeholder="Username..." class="form-control">
+							<input type="password" name="password" placeholder="Password..." class="form-control" >
+							<div class="d-flex justify-content-center mt-3 login_container">
+				 				<input class="btn login_btn" type="submit" value="Login">
+								<br>
+				   			</div>
+						<div class="mt-8">
+	<br>
+	{% for message in messages %}
+	<p id="messages">{{message}}</p>
+				{% endfor %}
+<h6> Not a Member Yet? <a href="/signup" class="ml-2">Sign Up Now</a> </h6></div>
+					</form>
+					</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- //sign in form -->
+	<!--footer section start-->
+		<footer>
+			<div class="w3-agileits-footer-top">
+				<div class="container">
+					<div class="wthree-foo-grids">
+						<div class="col-md-6 wthree-footer-grid">
+							<h4 class="footer-head">Who We Are</h4>
+							<p>We are two students who made this website as part of our Software Engineering course project.
+								This website aims to provide a simple to use platform for incoming students to buy second hand items and graduating students to sell their items.</p>
+						</div>
+
+						<div class="col-md-5 wthree-footer-grid">
+							<h4 class="footer-head">Contact Us</h4>
+
+							<address>
+
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-earphone"></span></li>
+									<li>+919876981111 / +919876591723</li>
+								</ul>
+								<div class="clearfix"> </div>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-envelope"></span></li>
+									<li><a href="mailto:info@example.com">helpdesk21@gmail.com</a></li>
+								</ul>
+							</address>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="agileits-footer-bottom text-center">
+			<div class="container">
+				<div class="w3-footer-logo">
+					<h1><a href="index.html"><span>Re</span>sale-v2</a></h1>
+				</div>
+
+				<div class="copyrights">
+					<p> © 2016 Resale. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		</footer>
+        <!--footer section end-->
+		<!-- Navigation-Js-->
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/classie.js' %}"></script>
+		<!-- //Navigation-Js-->
+		<!-- js -->
+		<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+		<!-- js -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="{% static 'js/bootstrap.js' %}"></script>
+		<script src="{% static 'js/bootstrap-select.js' %}"></script>
+		<script>
+		  $(document).ready(function () {
+			var mySelect = $('#first-disabled2');
+
+			$('#special').on('click', function () {
+			  mySelect.find('option:selected').prop('disabled', true);
+			  mySelect.selectpicker('refresh');
+			});
+
+			$('#special2').on('click', function () {
+			  mySelect.find('option:disabled').prop('disabled', false);
+			  mySelect.selectpicker('refresh');
+			});
+
+			$('#basic2').selectpicker({
+			  liveSearch: true,
+			  maxOptions: 1
+			});
+		  });
+		</script>
+		<!-- language-select -->
+		<script type="text/javascript" src="{% static 'js/jquery.leanModal.min.js' %}"></script>
+		<link href="{% static 'css/jquery.uls.css' %}" rel="stylesheet"/>
+		<link href="{% static 'css/jquery.uls.grid.css' %}" rel="stylesheet"/>
+		<link href="{% static 'css/jquery.uls.lcd.css' %}" rel="stylesheet"/>
+		<!-- Source -->
+		<script src="{% static 'js/jquery.uls.data.js' %}"></script>
+		<script src="{% static 'js/jquery.uls.data.utils.js' %}"></script>
+		<script src="{% static 'js/jquery.uls.lcd.js' %}"></script>
+		<script src="{% static 'js/jquery.uls.languagefilter.js' %}"></script>
+		<script src="{% static 'js/jquery.uls.regionfilter.js' %}"></script>
+		<script src="{% static 'js/jquery.uls.core.js' %}"></script>
+		<script>
+					$( document ).ready( function() {
+						$( '.uls-trigger' ).uls( {
+							onSelect : function( language ) {
+								var languageName = $.uls.data.getAutonym( language );
+								$( '.uls-trigger' ).text( languageName );
+							},
+							quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+						} );
+					} );
+				</script>
+		<!-- //language-select -->
+		<script type="text/javascript" src="{% static 'js/jquery.flexisel.js' %}"></script><!-- flexisel-js -->
+					<script type="text/javascript">
+						 $(window).load(function() {
+							$("#flexiselDemo3").flexisel({
+								visibleItems:1,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 5000,
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: {
+									portrait: {
+										changePoint:480,
+										visibleItems:1
+									},
+									landscape: {
+										changePoint:640,
+										visibleItems:1
+									},
+									tablet: {
+										changePoint:768,
+										visibleItems:1
+									}
+								}
+							});
+
+						});
+					   </script>
+		<!-- Slider-JavaScript -->
+			<script src="{%static 'js/responsiveslides.min.js' %}"></script>
+			 <script>
+			$(function () {
+			  $("#slider").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				maxwidth: 800,
+				namespace: "large-btns"
+			  });
+
+			});
+		  </script>
+		<!-- //Slider-JavaScript -->
+		<!-- here stars scrolling icon -->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear'
+						};
+					*/
+
+					$().UItoTop({ easingType: 'easeOutQuart' });
+
+					});
+			</script>
+			<!-- start-smoth-scrolling -->
+			<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+			</script>
+			<!-- start-smoth-scrolling -->
+		<!-- //here ends scrolling icon -->
+</body>
+</html>
